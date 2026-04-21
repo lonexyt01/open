@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qullar va Gladiatorlar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>🏛 QULLAR VA GLADIATORLAR</header>
+
+<nav>
+<a href="#intro">Kirish</a>
+<a href="#plan">Reja</a>
+<a href="#slaves">Qullar</a>
+<a href="#gladiators">Gladiatorlar</a>
+<a href="#colosseum">Malumot</a>
+<a href="#quiz">Test</a>
+</nav>
+
+<section class="hero">
+<h1>QADIMGI RIM</h1>
+<p>Qullar va Gladiatorlar</p>
+</section>
+
+<section id="intro" class="card">
+<h2>📖 Kirish</h2>
+<p id="introText"></p>
+</section>
+
+<section id="plan" class="card">
+<h2>📌 Reja</h2>
+<ul id="planText"></ul>
+</section>
+
+<section id="slaves" class="card">
+<h2>👥 Qullar</h2>
+<p id="slavesText"></p>
+</section>
+
+<section id="gladiators" class="card">
+<h2>⚔️ Gladiatorlar</h2>
+<p id="gladText"></p>
+</section>
+
+<section id="colosseum" class="card">
+<h2>🏟 Malumot</h2>
+<p id="colText"></p>
+</section>
+
+<section id="quiz" class="card">
+<h2>🎮 Test</h2>
+
+<div id="teamSetup">
+
+<h3>Jamoalar</h3>
+<div id="teams"></div>
+
+<button id="addTeam">➕ Jamoa qo‘shish</button>
+<button id="startGame">OK</button>
+
+</div>
+
+<div id="scoreBoard"></div>
+<div id="box"></div>
+
+</section>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+<div id="winnerScreen" class="winner hidden">
+    <h1 id="winnerText"></h1>
+    <p id="winnerScore"></p>
+    <button onclick="restartGame()">🔄 Restart</button>
+</div>
+</html>
