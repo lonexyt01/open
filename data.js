@@ -74,42 +74,43 @@ Spartak ana shu jangda halok bo‘lgan.
 };
 
 const QUESTIONS = [
-{q:"Qullar kim edi?", a:["Erkin odamlar","Asirlar","Qirollar"], c:1},
-{q:"Qullar qanday yo‘l bilan kelgan?", a:["Urush orqali","Savdo orqali","Ikkalasi ham"], c:2},
-{q:"Qullar erkin bo‘lganmi?", a:["Ha","Yo‘q","Ba’zida"], c:1},
-{q:"Qullar qayerda ishlagan?", a:["Dalada","Uyda","Har joyda"], c:2},
-{q:"Qullar kimga tegishli edi?", a:["Davlatga","Xo‘jayinga","Do‘stiga"], c:1},
+{q:"Qullar kim edi?", a:["Erkin odamlar","Asirlar","Qirollar"], c:0},
+{q:"Qullar qanday yo‘l bilan kelgan?", a:["Urush orqali","Savdo orqali","Ikkalasi ham"], c:0},
+{q:"Qullar erkin bo‘lganmi?", a:["Ha","Yo‘q","Ba’zida"], c:0},
+{q:"Qullar qayerda ishlagan?", a:["Dalada","Uyda","Har joyda"], c:0},
+{q:"Qullar kimga tegishli edi?", a:["Davlatga","Xo‘jayinga","Do‘stiga"], c:0},
 
 {q:"Gladiatorlar kim edi?", a:["Jangchilar","Dehqonlar","Ustozlar"], c:0},
-{q:"Gladiatorlar qayerda jang qilgan?", a:["Bozorda","Kolizeyda","Uyda"], c:1},
-{q:"Gladiatorlar nima bilan jang qilgan?", a:["Kitob","Qurol","Qo‘l"], c:1},
+{q:"Gladiatorlar qayerda jang qilgan?", a:["Bozorda","Kolizeyda","Uyda"], c:0},
+{q:"Gladiatorlar nima bilan jang qilgan?", a:["Kitob","Qurol","Qo‘l"], c:0},
 {q:"Gladiatorlar erkin bo‘lganmi?", a:["Yo‘q","Ha","Har doim"], c:0},
-{q:"Gladiatorlar kim uchun jang qilgan?", a:["O‘zlari","Tomoshabinlar","Do‘stlar"], c:1},
+{q:"Gladiatorlar kim uchun jang qilgan?", a:["O‘zlari","Tomoshabinlar","Do‘stlar"], c:0},
 
-{q:"Qullar hayoti qanday edi?", a:["Oson","Og‘ir","Boy"], c:1},
-{q:"Qullar ozod bo‘lishi mumkinmi?", a:["Yo‘q","Ha","Ba’zida"], c:2},
-{q:"Qullar nima ish qilgan?", a:["O‘qigan","Ishlagan","Dam olgan"], c:1},
-{q:"Qullar pul olganmi?", a:["Ha","Yo‘q","Ko‘p"], c:1},
-{q:"Qullar kim tomonidan boshqarilgan?", a:["Do‘stlar","Xo‘jayin","Qirol"], c:1},
+{q:"Qullar hayoti qanday edi?", a:["Oson","Og‘ir","Boy"], c:0},
+{q:"Qullar ozod bo‘lishi mumkinmi?", a:["Yo‘q","Ha","Ba’zida"], c:0},
+{q:"Qullar nima ish qilgan?", a:["O‘qigan","Ishlagan","Dam olgan"], c:0},
+{q:"Qullar pul olganmi?", a:["Ha","Yo‘q","Ko‘p"], c:0},
+{q:"Qullar kim tomonidan boshqarilgan?", a:["Do‘stlar","Xo‘jayin","Qirol"], c:0},
 
-{q:"Gladiatorlar hayoti qanday edi?", a:["Tinch","Xavfli","Oson"], c:1},
+{q:"Gladiatorlar hayoti qanday edi?", a:["Tinch","Xavfli","Oson"], c:0},
 {q:"Gladiatorlar mashhur bo‘lishi mumkinmi?", a:["Ha","Yo‘q","Kam"], c:0},
-{q:"Gladiatorlar qayerda yashagan?", a:["Maktabda","Maxsus joyda","Ko‘chada"], c:1},
-{q:"Gladiatorlar nimaga tayyorlangan?", a:["O‘qishga","Jangga","Savdoga"], c:1},
+{q:"Gladiatorlar qayerda yashagan?", a:["Maktabda","Maxsus joyda","Ko‘chada"], c:0},
+{q:"Gladiatorlar nimaga tayyorlangan?", a:["O‘qishga","Jangga","Savdoga"], c:0},
 {q:"Gladiatorlar kim tomonidan tayyorlangan?", a:["Ustoz","Do‘st","Qirol"], c:0},
 
-{q:"Qullar va gladiatorlar o‘xshashmi?", a:["Ha","Yo‘q","Biroz"], c:2},
-{q:"Qullar jang qilganmi?", a:["Ha","Yo‘q","Ba’zida"], c:2},
-{q:"Gladiatorlar o‘lim xavfi bormi?", a:["Yo‘q","Ha","Kam"], c:1},
-{q:"Qullar o‘z hayotini tanlay olganmi?", a:["Ha","Yo‘q","Ba’zida"], c:1},
-{q:"Gladiatorlar nima uchun jang qilgan?", a:["Pul","Shon-shuhrat","Ikkalasi ham"], c:2},
+{q:"Qullar va gladiatorlar o‘xshashmi?", a:["Ha","Yo‘q","Biroz"], c:0},
+{q:"Qullar jang qilganmi?", a:["Ha","Yo‘q","Ba’zida"], c:0},
+{q:"Gladiatorlar o‘lim xavfi bormi?", a:["Yo‘q","Ha","Kam"], c:0},
+{q:"Qullar o‘z hayotini tanlay olganmi?", a:["Ha","Yo‘q","Ba’zida"], c:0},
+{q:"Gladiatorlar nima uchun jang qilgan?", a:["Pul","Shon-shuhrat","Ikkalasi ham"], c:0},
 
 {q:"Qullar qayerdan kelgan?", a:["Urushdan","Uyidan","Maktabdan"], c:0},
-{q:"Gladiatorlar kimlar bo‘lishi mumkin?", a:["Qullar","Erkinlar","Ikkalasi ham"], c:2},
-{q:"Qullar qanday yashagan?", a:["Boy","Oddiy","Og‘ir"], c:2},
-{q:"Gladiatorlar kimga tegishli edi?", a:["O‘ziga","Xo‘jayiniga","Davlatga"], c:1},
+{q:"Gladiatorlar kimlar bo‘lishi mumkin?", a:["Qullar","Erkinlar","Ikkalasi ham"], c:0},
+{q:"Qullar qanday yashagan?", a:["Boy","Oddiy","Og‘ir"], c:0},
+{q:"Gladiatorlar kimga tegishli edi?", a:["O‘ziga","Xo‘jayiniga","Davlatga"], c:0},
 {q:"Qullar va gladiatorlar Rimda muhimmi?", a:["Ha","Yo‘q","Kam"], c:0}
 ];
+
 const IMAGES = {
 intro: "intro.jpg",
 plan: "plan.jpg",
